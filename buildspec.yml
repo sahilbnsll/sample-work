@@ -2,8 +2,8 @@ version: 0.2
 
 phases:
   install:
-      - apt-get update -y
-      - apt-get install -y maven
+    runtime-versions:
+      java: corretto8
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
